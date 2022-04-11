@@ -11,7 +11,7 @@ try:
     cell_size = 40
 
     speed = 0.75
-    game_acceleration = 0.9872
+    game_acceleration = 0.984
     how_long_to_wait_after_assembling_row = 0.3
     time_to_move_away_after_collision_with_figur = 0.4
     how_many_times_will_we_move_with_the_key_pressed = 9
@@ -530,7 +530,7 @@ try:
         if key_left and time() >= this_time_local + 1 / how_many:
             move_left()
             this_time_local = time()
-        if key_down and time() >= this_time_local + 1 / how_many:
+        if key_down and time() >= this_time_local + speed / how_many:
             move_down()
             this_time_local = time()
 
