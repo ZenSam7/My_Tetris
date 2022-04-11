@@ -538,9 +538,7 @@ try:
 
     #########################################
 
-    for i in range(100):
-        speed *= game_acceleration
-        score += 1
+
     while True:
         RUN = True
 
