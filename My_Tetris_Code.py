@@ -11,7 +11,7 @@ try:
     cell_size = 40
 
     speed = 0.75
-    game_acceleration = 0.984
+    game_acceleration = 0.99
     how_long_to_wait_after_assembling_row = 0.3
     time_to_move_away_after_collision_with_figur = 0.4
     how_many_times_will_we_move_with_the_key_pressed = 9
@@ -538,7 +538,9 @@ try:
 
     #########################################
 
-
+    for i in range(100):
+        speed *= game_acceleration
+        score += 1
     while True:
         RUN = True
 
