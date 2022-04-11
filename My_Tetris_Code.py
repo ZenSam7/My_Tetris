@@ -14,7 +14,7 @@ try:
     game_acceleration = 0.9872
     how_long_to_wait_after_assembling_row = 0.3
     time_to_move_away_after_collision_with_figur = 0.4
-    how_many_times_will_we_move_with_the_key_pressed = 5.5
+    how_many_times_will_we_move_with_the_key_pressed = 9
 
     size_text_Score = 30
     size_text_Game_Over = 65
@@ -524,13 +524,13 @@ try:
 
 
         how_many = how_many_times_will_we_move_with_the_key_pressed
-        if key_right and time() >= this_time_local + speed / how_many:
+        if key_right and time() >= this_time_local + 1 / how_many:
             move_right()
             this_time_local = time()
-        if key_left and time() >= this_time_local + speed / how_many:
+        if key_left and time() >= this_time_local + 1 / how_many:
             move_left()
             this_time_local = time()
-        if key_down and time() >= this_time_local + speed / how_many:
+        if key_down and time() >= this_time_local + 1 / how_many:
             move_down()
             this_time_local = time()
 
